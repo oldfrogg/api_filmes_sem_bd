@@ -1,0 +1,15 @@
+{% extends "template.html" %}
+
+{% block conteudo %}
+
+
+<h1>Login</h1>
+<!-- Ao envio do form, indico o método POST e chamo a rota /autenticar, para verificar o login e liberar o acesso -->
+<form method="POST" , action="{{ url_for('autenticar') }}">
+    <input type="hidden", name="proxima", value="{{ proxima }}">
+    <label for="nomeusuario">Usuário:<input type="text" , name="nomeusuario"></label>
+    <label>Senha:<input type="password" , name="senhausuario"></label>
+    <input type="submit">
+</form>
+
+{% endblock %}

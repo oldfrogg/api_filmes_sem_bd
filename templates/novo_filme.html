@@ -1,0 +1,14 @@
+{% extends "template.html" %}
+
+{% block conteudo %}
+
+<!-- Ao envio do form, indico o método POST e chamo a rota /criar, para adicionar um novo filme à lista -->
+<form id="form_criar_filme" method="post" action="{{ url_for('criar') }}">
+        <label>Filme: <input type="text" , name="filme"></label>
+        <label>Gênero: <input type="text" , name="genero"></label>
+        <label>Ano: <input type="text" , name="ano"></label>
+        <input class="submit_form" type="submit" value="Cadastrar!">
+    </div>
+</form>
+
+{% endblock %}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filmes</title>
+
+    <!-- <link rel="stylesheet" href="../static/styles.css"> -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css' )}}">
+    <!-- É melhor usar assim, pois evita confuão em caso do styles.css ir para alguma pasta subordibada. Bastará estar a partir de static e ter esse nome-->
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="{{ url_for('index') }}">Início</a>
+            <a href="{{ url_for('novo_filme')}}">Adicionar Filme</a>
+            <a href="{{ url_for('login') }}">Login</a>
+            <a href="{{ url_for('logout') }}">Logout</a>
+        </nav>
+    </header>
+    {% with messages = get_flashed_messages() %}
+    {% if messages %}
+    <ul>
+        {% for message in messages %}
+        <li class="alert alert-sucess">{{ message }}</li>
+        {% endfor %}
+    </ul>
+    {% endif %}
+    {% endwith %}
+    <h1>{{titulo}}</h1>
+
+    {% block conteudo %}
+
+    {% endblock %}
+
+
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+body {
+    background-color: black;
+    color: blanchedalmond;
+}
+
+nav{
+    display: flex;
+    gap: 50px;
+    padding-left: 5%;
+}
+
+td{
+    padding: 5px 10px;
+}
+
+a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: navajowhite;
+}
+
+#form_criar_filme{
+    display:flex;
+    flex-direction: column;
+    width: 30%;
+    gap: 10px;
+    align-items: end;
+    align-content: center;
+}
+
+label {
+    display: inline;
+}
+
+input {
+    border-radius: 6px;
+}
+
+.submit_form{
+    width: 100px;
+    height: 40px;
+    background-color: cadetblue;
+    border-radius: 20px;
+}
