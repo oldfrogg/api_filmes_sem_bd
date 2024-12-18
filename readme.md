@@ -1,7 +1,5 @@
 # API Filmes
 
-Readme ainda em atualização!
-
 Projeto desenvolvido para auxílio no estudo de Python, utilizando como base o curso da Alura: Flask: crie uma webapp com Python, com o instrutor Bruno Divino
 
 Este webapp que retorna páginas HTML, onde podemos fazer o cadastro de filmes em uma lista.
@@ -35,4 +33,4 @@ Execute a aplicação
 * /criar - POST - Rota intermediária que executará a função de a dicionar um filme à lista.
 * /login - GET - Carrega a página com o template da tela de login.
 * /autenticar - POST - Rota intermediária de autenticação.
-* //logout - GET - Rota que faz o logout.
+* /logout - GET - Rota que faz o logout.
